@@ -1,0 +1,30 @@
+name: 'outline-sync-docs-action'
+author: 'Tess Network'
+description: 'Deploy your documentation to your Outline'
+
+inputs:
+  url:
+    description: 'Outline Base URL'
+    required: false
+    default: 'https://app.getoutline.com'
+  apiKey:
+    description: 'Outline API Key'
+    required: true
+  collectionId:
+    description: 'Id of the collection where to save to'
+    required: true
+  documentId:
+    description: 'Id of the document where to save, can be empty'
+    required: false
+  repositoryPath:
+    description: 'Path where to find the documentation in the repository'
+    required: false
+    default: 'docs/'
+
+runs:
+  using: 'node24'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'book'
+  color: 'blue'

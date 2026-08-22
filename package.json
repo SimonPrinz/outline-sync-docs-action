@@ -1,0 +1,33 @@
+{
+  "name": "outline-sync-docs-action",
+  "version": "0.1.0",
+  "description": "Deploy your documentation to your Outline",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonPrinz/outline-sync-docs-action.git"
+  },
+  "author": {
+    "name": "Tess Network",
+    "email": "hey@tess.network"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "test": "node --test"
+  },
+  "bugs": {
+    "url": "https://github.com/SimonPrinz/outline-sync-docs-action/issues"
+  },
+  "homepage": "https://github.com/SimonPrinz/outline-sync-docs-action#readme",
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "@actions/github": "^9.1.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "rollup": "^4.62.5"
+  }
+}

@@ -1,0 +1,5 @@
+# always include dist
+!dist/
+
+.idea/
+node_modules/
