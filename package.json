@@ -1,6 +1,6 @@
 {
   "name": "outline-sync-docs-action",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Deploy your documentation to your Outline",
   "type": "module",
   "repository": {
